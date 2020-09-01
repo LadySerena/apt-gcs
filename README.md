@@ -23,7 +23,7 @@ env GOOS=linux GOARCH=amd64 go build -o gs github.com/ceocoder/apt-gcs/cmd
 
 Copy generated binary `gs` to your `/usr/lib/apt/methods/` directory
 
-Something like this should work in theory
+Add the below to a `.list` file within the `/etc/apt/sources.list.d/` directory
 
 ```
 deb gs://my-debs stable main
